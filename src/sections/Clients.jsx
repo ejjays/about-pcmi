@@ -3,7 +3,7 @@ import { clientReviews } from '../constants/index.js';
 const handleClickWithDelay = (url) => {
   setTimeout(() => {
     window.open(url, '_blank', 'noopener,noreferrer');
-  }, 1000); // Profile Click Delay
+  }, 2000); // 2000 milliseconds = 2 seconds
 };
 
 const Clients = () => {
@@ -17,7 +17,9 @@ const Clients = () => {
             <div>
               <p className="text-white-800 font-light">
                 <span className="grid-headtext">“  </span>
-                {item.review.slice(1, -1)} {/* Remove the quotes from the review string */}
+                {item.id === 3
+                  ? <>Ang pananampalataya ay ang katiyakan na mangyayari ang mga bagay na inaasahan, at ang katunayan ng mga bagay na hindi nakikita. — <small><em>Hebrews 11:1</em></small></>
+                  : item.review.slice(1, -1)}
                 <span className="grid-headtext">  ”</span>
               </p>
 
