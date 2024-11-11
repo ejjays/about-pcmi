@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+{ /* import React, { useEffect } from 'react';
 
 const Chatbot = () => {
   useEffect(() => {
@@ -12,6 +12,40 @@ const Chatbot = () => {
     script2.setAttribute('data-id', '8648675472');
     script2.id = 'chatling-embed-script';
     script2.type = 'text/javascript';
+    document.body.appendChild(script2);
+  }, []);
+
+  return (
+    <div></div>
+  );
+};
+
+export default Chatbot;
+
+*/}
+
+
+
+import React, { useEffect } from 'react';
+
+const Chatbot = () => {
+  useEffect(() => {
+    // Script 1 to initialize tarsSettings
+    const script1 = document.createElement('script');
+    script1.innerHTML = `
+      window.tarsSettings = {
+        "convid": "hshvwG",
+        "href": "https://chatbot.hellotars.com/conv/hshvwG"
+      };
+    `;
+    document.head.appendChild(script1);
+
+    // Script 2 to load the Tars widget
+    const script2 = document.createElement('script');
+    script2.type = 'text/javascript';
+    script2.src = 'https://tars-file-upload.s3.amazonaws.com/bulb/js/widget.js';
+    script2.id = 'tars-widget-script';
+    script2.async = true;
     document.body.appendChild(script2);
   }, []);
 
