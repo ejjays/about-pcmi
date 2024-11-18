@@ -1,3 +1,5 @@
+/*
+
 import React, { useEffect } from 'react';
 
 const TarsChatScript = () => {
@@ -22,3 +24,5 @@ const TarsChatScript = () => {
 };
 
 export default TarsChatScript;
+
+*/
