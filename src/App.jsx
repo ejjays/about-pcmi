@@ -7,7 +7,7 @@ import Contact from './sections/Contact.jsx';
 import Projects from './sections/Projects.jsx';
 import WorkExperience from './sections/Experience.jsx';
 // import Chatbot from './Chatbot.jsx';
-import TarsChatScript from './Tars.tsx';
+// import TarsChatScript from './Tars.tsx';
 // import ChatWidget from './ChatWidget.tsx';
 
 const App = () => {
@@ -21,7 +21,7 @@ const App = () => {
       <Contact />
       <Footer />
      {/* <Chatbot /> */}
-      <TarsChatScript />
+     {/* <TarsChatScript /> */}
       {/* <ChatWidget /> */}
     </main>
   );
