@@ -174,7 +174,7 @@ const Contact = () => {
                   <img src="/gif/load.gif" alt="loading" className="loading" />
                 </div>
               ) : (
-                "Continue to App"
+                "Continue to Appyyy"
               )}
             </a>
           </form>
