@@ -163,7 +163,7 @@ const Contact = () => {
               {loading ? 'Sending...' : 'Send Message'}
               <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
             </button>
-            <a
+           {/* <a
               className={`app big gradient-background ${isActive ? 'active' : ''}`}
               href="#"
               onClick={handleRedirectClick}
@@ -176,7 +176,7 @@ const Contact = () => {
               ) : (
                 "Continue to Appyyy"
               )}
-            </a>
+            </a> */}
           </form>
         </div>
       </div>
